@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="entity.UserOrder" table="userorder">
+		<id column="id" name="id" type="int">
+			<generator class="native"/>		<!-- 主键生成策略 -->
+		</id>
+		<property name="userId" length="50" type="int"/>
+		<property name="realname" length="50" type="string"/>
+		<property name="phone" length="50" type="string"/>
+		<property name="address" length="50" type="string"/>
+		<property name="postCode" length="50" type="string"/>
+		<property name="accountCode" length="50" type="string"/>
+		<property name="accountDate" length="50" type="string"/>
+		<property name="execute" length="50" type="string"/>
+	</class>
+</hibernate-mapping>
